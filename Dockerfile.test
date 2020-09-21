@@ -16,7 +16,7 @@ ENV CONFIG_PATH=/opt/configs/
 
 RUN	coverage run -m pytest ./tests --disable-warnings
 RUN	coverage xml -o coverage-report.xml
-RUN	mutmut --paths-to-mutate ./stinger/src --tests-dir ./tests run || true
+RUN	mutmut --paths-to-mutate ./src --tests-dir ./tests run || true
 RUN	bandit -r ./ -x ./tests
 
 EXPOSE 8080

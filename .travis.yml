@@ -9,6 +9,3 @@ script:
   - docker stop stinger
   - docker rm stinger
   - docker rmi roch1990/test-app:latest
-
-after_success:
-  - bash <(curl -s https://codecov.io/bash)

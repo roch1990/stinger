@@ -1,6 +1,17 @@
 [![EO principles respected here](https://www.elegantobjects.org/badge.svg)](https://www.elegantobjects.org)
 [![We recommend IntelliJ IDEA](https://www.elegantobjects.org/intellij-idea.svg)](https://www.jetbrains.com/idea/)
 
+[![Build Status](https://travis-ci.org/roch1990/stinger.svg?branch=master)](https://travis-ci.org/roch1990/stinger)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=roch1990_stinger&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=roch1990_stinger)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=roch1990_stinger&metric=alert_status)](https://sonarcloud.io/dashboard?id=roch1990_stinger)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=roch1990_stinger&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=roch1990_stinger)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=roch1990_stinger&metric=duplicated_lines_density)](https://sonarcloud.io/dashboard?id=roch1990_stinger)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=roch1990_stinger&metric=code_smells)](https://sonarcloud.io/dashboard?id=roch1990_stinger)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=roch1990_stinger&metric=security_rating)](https://sonarcloud.io/dashboard?id=roch1990_stinger)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=roch1990_stinger&metric=sqale_index)](https://sonarcloud.io/dashboard?id=roch1990_stinger)
+[![Hits-of-Code](https://hitsofcode.com/github/roch1990/stinger?branch=master)](https://hitsofcode.com/view/github/roch1990/stinger?branch=master)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/AH-64D_Apache_Longbow.jpg" style="max-width: 50%">
 
 # STINGER
