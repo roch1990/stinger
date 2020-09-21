@@ -1,0 +1,8 @@
+{
+  "uri": "http://google.com",
+  "port": 80,
+  "name": "google",
+  "route": "/robots.txt",
+  "method": "GET",
+  "timeout": 30
+}

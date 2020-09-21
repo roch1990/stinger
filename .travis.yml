@@ -1,0 +1,14 @@
+language: python
+services:
+  - docker
+
+script:
+  - docker build -f Dockerfile.test -t roch1990/test-app .
+  - docker run -d --network="host" --name="stinger" roch1990/test-app /bin/bash `bash <(curl -s https://codecov.io/bash)`
+  - docker ps -a
+  - docker stop stinger
+  - docker rm stinger
+  - docker rmi roch1990/test-app:latest
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
