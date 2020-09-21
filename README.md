@@ -1,7 +1,7 @@
 [![EO principles respected here](https://www.elegantobjects.org/badge.svg)](https://www.elegantobjects.org)
 [![We recommend IntelliJ IDEA](https://www.elegantobjects.org/intellij-idea.svg)](https://www.jetbrains.com/idea/)
 
-![](https://upload.wikimedia.org/wikipedia/commons/6/66/AH-64D_Apache_Longbow.jpg)
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/66/AH-64D_Apache_Longbow.jpg" style="max-width: 50%">
 
 # STINGER
 # Table of contents
@@ -9,12 +9,13 @@
 - [Introduction](#introduction)
     - [What is that](#what-is-that)
     - [Why](#why)
-    - [Python versions compability](#python-versions-compability)
-- [Use-cases](#use-cases)
-    - [Shell](#from-shell)
-    - [Pre-commit hook](#add-linter-to-pre-commit-hooks)
-- [Some theoretical nuances](#some-theoretical-nuances)
-    - [Why naive](#why-naive)
+- [Ping configs](#ping-configs)
+    - [How I can add new config](#how-i-can-add-new-config)
+    - [Example](#example)
+    - [Config json-schema](#config-json-schema)
+- [API](#api)
+    - [Endpoint ping process status](#endpoint-ping-process-status)
+    - [Restart endpoint ping process](#restart-endpoint-ping-process)
 - [Development](#development)
     - [Testing](#testing)
     - [Contributing](#contributing)
@@ -40,10 +41,13 @@ Okay, you can write a small json-config (you can see example below), add it to '
 
 Hurray! It works! Stinger pings your server by rules with specified frequency.
 
-# How I can add new config
+# Ping configs
+## How I can add new config
 
 In project root directory you should see directory 'configs'.
 You can add your json-configs into.
+
+## Example
 
 Configuration example:
 
@@ -60,6 +64,8 @@ Configuration example:
 }
 }
 ```
+
+## Config json-schema
 
 json-schema:
 
@@ -112,13 +118,16 @@ json-schema:
 }
 ```
 
-# Ping process operation
+# API
+## Endpoint ping process status
 
 You can check ping process status, by call api method:
 
 ```bash
 /status
 ```
+
+## Restart endpoint ping process
 
 You can restart your ping-process by call api method (name - it's `name` field from json-config):
 
@@ -155,26 +164,6 @@ You can start local tests:
 
 ```bash
 make tests
-```
-
-this instruction starts - unit, mutual and security tests.
-
-Yuo can tests pre-commit integration:
-
-```bash
-make local-run
-```
-
-Show results of mutual tests:
-
-```bash
-mutmut results
-```
-
-Show result of concrete mutual tests:
-
-```bash
-mutmut show <test_id:int>
 ```
 
 ## Contributing
